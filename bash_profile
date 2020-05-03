@@ -1,8 +1,7 @@
-# kubernetes aliases
 source ~/.bash_kube
-source ~/.credentials
+#source ~/.credentials
 
-export PS1="\A [\$(get_context)|\$(get_namespace)] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \n$ "
+#export PS1="\A [\$(get_context())|\$(get_namespace())] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch())\[\033[00m\] \n$ "
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
     # if not found in /usr/local/etc, try the brew --prefix location
@@ -15,17 +14,16 @@ parse_git_branch() {
 }
 
 
-export PATH=/usr/local/Cellar:$PATH
+export PATH=$PYENV_ROOT/bin:/usr/local/Cellar:$PATH
 export DEPLOY_TO=$(get_namespace)
 export LC_COLLATE=C
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR=vim
-
+export CLICOLOR=1
 
 export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git'
 
 # [Aliases]
-alias python=python3
 alias ls='ls -lG'
 alias pip=pip3
 alias restart-nginx='sudo nginx -s stop && sudo nginx'
@@ -67,3 +65,7 @@ function make_js_tags {
     cscope -Rb
     ctags -R --exclude=node_modules --exclude=dist .
 }
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

@@ -75,6 +75,14 @@ call plug#begin()
 Plug 'janko-m/vim-test'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'cespare/vim-toml'
+Plug 'dense-analysis/ale'
+Plug 'tell-k/vim-autopep8'
+Plug 'tpope/vim-fugitive'
+Plug 'flowtype/vim-flow'
+Plug 'Integralist/vim-mypy'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'wavded/vim-stylus'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 
