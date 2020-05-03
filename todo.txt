@@ -1,0 +1,57 @@
+(B) 2020-02-19 browser support list
+(B) 2020-03-17 python code RFC https://lantum.atlassian.net/wiki/spaces/ENG/pages/390463626/Python+Linting
+(B) 2020-04-16 Speccing workthough confluence
+x 2020-04-30 2020-04-29 Bugs RFC
+(B) 2020-04-29 Tech Debt RFC
+(C) 2020-01-13 Session Create form spec - for formik
+(C) 2020-02-13 Spec swaps PM https://marvelapp.com/6ih31cd/screen/66578227
+(C) Gigi 1-1 notes
+(C) Luke 1-1 notes
+(C) Sprint review
+x 2020-01-08 2020-01-08 Location QA
+x 2020-01-08 2020-01-08 Shift Type Data models
+x 2020-01-09 2020-01-08 Investigate publish governance Nadia Kahn
+x 2020-01-09 2020-01-08 Make some shift labels
+x 2020-01-09 2020-01-08 Post mortem for spam chat
+x 2020-01-10 2020-01-08 Void sessions in FAJ
+x 2020-01-10 2020-01-09 Followed emails
+x 2020-01-10 2020-01-09 void sessions in rota
+x 2020-01-10 2020-01-10 Return session label ids in order
+x 2020-01-14 2020-01-13 timeshites
+x 2020-01-15 2020-01-13 QA is void
+x 2020-01-15 2020-01-13 verify emails
+x 2020-01-16 2020-01-08 Code Club
+x 2020-01-16 2020-01-15 Read blog https://docs.google.com/document/d/1CqXgM2rdoWinYT0QeaYxXCqAcRXuCChmxrPCmKHB4dk/edit?usp=sharing
+x 2020-01-22 Gigi Probation dock
+x 2020-01-22 Session update label - notify staff?
+x 2020-01-23 2020-01-22 Send Kat shift labels spec for clients (next coupla days)
+x 2020-01-28 2020-01-22 Think about what grad can do / Who will on boad him
+x 2020-01-30 2020-01-29 Wills queries
+x 2020-02-10 2020-01-29 Draw up system architecture
+x 2020-02-10 2020-02-07 Retro doc
+x 2020-02-10 2020-02-07 Withdrawn session app
+x 2020-02-11 2020-02-10 my review
+x 2020-02-12 2020-02-07 Code review process
+x 2020-02-14 2020-02-12 dev refresh stuff
+x 2020-02-19 2020-02-17 dev reset - Erry took over
+x 2020-02-19 2020-02-18 Split out calendar and worker side labels
+x 2020-02-21 2020-02-18 KP handover
+x 2020-02-25 2020-02-24 Spec swaps worker
+x 2020-02-25 CTO q's
+x 2020-02-27 2020-02-26 Finger in the air for Jen
+x 2020-02-28 2020-02-25 GQL RFC
+x 2020-03-12 Document for explaing draft shift conflicts
+x 2020-03-19 2020-03-12 ESTIAMTES
+x 2020-03-24 2020-01-08 remove jest-each - native
+x 2020-03-24 2020-01-08 remove jest-each - web
+x 2020-03-24 2020-02-19 Native restructure 
+x 2020-03-24 2020-02-19 availability v2 readme
+x 2020-03-25 2020-03-10 Interview question flesh out
+x 2020-03-25 2020-03-24 Stress plan
+x 2020-03-27 2020-03-27 Anyone can instant book
+x 2020-04-08 Spec covid nudge
+x 2020-04-21 2020-04-21 last created session stuff
+x 2020-04-28 2020-04-23 Post mortem: notifications
+x 2020-04-28 2020-04-23 Post mortem: outages process
+x 2020-04-29 2020-03-17 RFC migration & post mortems
+x 2020-04-29 2020-04-21 Organise retro
