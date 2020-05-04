@@ -1,7 +1,7 @@
 source ~/.bash_kube
 #source ~/.credentials
 
-#export PS1="\A [\$(get_context())|\$(get_namespace())] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch())\[\033[00m\] \n$ "
+export PS1="[\$(get_context)|\$(get_namespace)] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \n$ "
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
     # if not found in /usr/local/etc, try the brew --prefix location
@@ -15,7 +15,7 @@ parse_git_branch() {
 
 
 export PATH=$PYENV_ROOT/bin:/usr/local/Cellar:$PATH
-export DEPLOY_TO=$(get_namespace)
+#export DEPLOY_TO=$(get_namespace)
 export LC_COLLATE=C
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR=vim
@@ -56,16 +56,16 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 function make_py_tags {
-    find . -name '*.py' > cscope.files
-    cscope -Rb
-    ctags -R .
+    find . -name '*.py' > cscope.files;
+    cscope -Rb;
+    ctags -R .;
 }
 function make_js_tags {
-    find . -name '*.js' ! -path './node_modules/*' > cscope.files
-    cscope -Rb
-    ctags -R --exclude=node_modules --exclude=dist .
+    find . -name '*.js' ! -path './node_modules/*' > cscope.files;
+    cscope -Rb;
+    ctags -R --exclude=node_modules --exclude=dist .;
 }
 
 if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init -)";
 fi

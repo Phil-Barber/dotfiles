@@ -1,4 +1,4 @@
-#source <(kubectl completion bash) # Enable auto completion
+source <(kubectl completion bash) # Enable auto completion
 
 alias k=kubectl
 alias n=namespace
@@ -25,7 +25,7 @@ get_context() {
 }
 
 get_namespace() {
- kubectl config view --minify --output 'jsonpath={..namespace}'
+    kubectl config view --minify --output 'jsonpath={..namespace}'
 }
 
 function logs {

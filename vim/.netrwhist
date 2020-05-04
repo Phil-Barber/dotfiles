@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/phil/repos/react-web-app/src/components/sessions/practice/utils'
+let g:netrw_dirhist_7='/Users/phil/repos/react-web-app/src/components/sessions/practice'
 let g:netrw_dirhist_6='/Users/phil/.pyenv'
 let g:netrw_dirhist_5='/Users/philbarber/repos/react-web-app/src'
 let g:netrw_dirhist_4='/Users/philbarber/repos/react-web-app/src/selectors'
