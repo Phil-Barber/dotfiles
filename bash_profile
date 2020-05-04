@@ -3,11 +3,8 @@ source ~/.bash_kube
 
 export PS1="[\$(get_context)|\$(get_namespace)] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \n$ "
 
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
-    # if not found in /usr/local/etc, try the brew --prefix location
-    [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ] && \
-        . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
-}
+[ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ] \
+    &&  . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash 
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
