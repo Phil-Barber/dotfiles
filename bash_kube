@@ -8,8 +8,14 @@ export NAME=k.lantum.com
 
 export KUBE_EDITOR='vim'
 
-use_uk_cluster() {
+use_uk_prod() {
     k config use-context k.lantum.com
+    n prod
+}
+
+use_uk_staging() {
+    k config use-context ukds.lantum.com
+    n staging
 }
 
 use_us_staging() {
