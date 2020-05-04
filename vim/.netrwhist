@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/phil/dotfiles/vim/ftplugin'
 let g:netrw_dirhist_8='/Users/phil/repos/react-web-app/src'
 let g:netrw_dirhist_7='/Users/phil/.vim/ftplugin'
 let g:netrw_dirhist_6='/Users/phil/.vim'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_3='/Users/phil/.vim/autoload'
 let g:netrw_dirhist_2='/Users/phil/.vim'
 let g:netrw_dirhist_1='/Users/phil/dotfiles/vim/ftplugin'
 let g:netrw_dirhist_0='/Users/phil/dotfiles/vim'
-let g:netrw_dirhist_9='/Users/phil/dotfiles/vim/ftplugin'

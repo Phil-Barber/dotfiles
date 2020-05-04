@@ -17,5 +17,3 @@ autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
 let g:javascript_plugin_flow = 1
 
 set colorcolumn=80
-
-let g:ale_fix_on_save = 0

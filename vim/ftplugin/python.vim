@@ -5,7 +5,6 @@ let b:ale_fixers = ['yapf']
 
 " python syntax
 let g:python_highlight_all = 1
-let b:ale_fix_on_save=0
 
 function! DockerTransform(cmd)
     echo "HELLO"
