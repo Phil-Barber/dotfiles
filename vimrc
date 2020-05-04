@@ -5,11 +5,10 @@
 :set shiftwidth=4
 :set expandtab
 :set ruler
+:set incsearch
 
 set undodir=~/.vim/undodir
 set undofile
-
-:set shellcmdflag=-ic
 
 " fold it but unfold it please
 set foldmethod=indent
@@ -40,9 +39,6 @@ map ,v :vsplit <C-R>=expand("%:p:h") . "/" <CR>
 " Search for visually selected text
 vnoremap // y/<C-R>"<CR>
 
-execute pathogen#infect()
-filetype plugin indent on
-
 " Cursor change
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"
@@ -62,11 +58,6 @@ map <F2> :call TrimWhiteSpace()<CR>
 " tree
 autocmd StdinReadPre * let s:std_in=1
 
-" enable line numbers
-let NERDTreeShowLineNumbers=1
-" make sure relative line numbers are used
-autocmd FileType nerdtree setlocal relativenumber
-
 " grep ignore
 :set wildignore+=*.swp,
 :set wildignore+=node_modules/**,
@@ -80,6 +71,8 @@ Plug 'flowtype/vim-flow'
 Plug 'Integralist/vim-mypy'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
+Plug 'ruanyl/vim-gh-line'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 augroup FiletypeGroup
@@ -93,6 +86,7 @@ let g:ale_fix_on_save = 1
 set noignorecase
 highlight ALEWarning cterm=bold ctermbg=DarkGreen ctermfg=LightGrey
 highlight ALEError cterm=bold ctermbg=DarkGreen ctermfg=LightGrey
+highlight clear SignColumn
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 

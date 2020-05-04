@@ -5,7 +5,7 @@ let b:ale_linter_aliases = ['css', 'javascript']
 let b:ale_linters = ['eslint', 'stylelint']
 
 " Fix files with prettier, and then ESLint.
-let b:ale_fixers = ['eslint', 'stylelint']
+let b:ale_fixers = ['eslint', 'prettier', 'stylelint']
 
 " js syntax
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
@@ -16,4 +16,6 @@ autocmd BufReadPre *.js let b:javascript_lib_use_underscore = 1
 autocmd BufReadPre *.js let b:javascript_lib_use_backbone = 0
 let g:javascript_plugin_flow = 1
 
-set colorcolumn=100
+set colorcolumn=80
+
+let g:ale_fix_on_save = 0
