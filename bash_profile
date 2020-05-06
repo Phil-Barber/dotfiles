@@ -23,7 +23,7 @@ export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git'
 # [Aliases]
 alias ls='ls -lG'
 alias pip=pip3
-alias restart-nginx='sudo nginx -s stop && sudo nginx'
+alias restart-nginx='nginx -s stop && nginx'
 alias g='git'
 alias dc='docker-compose'
 eval $(thefuck --alias f)

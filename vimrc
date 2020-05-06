@@ -67,7 +67,6 @@ Plug 'janko-m/vim-test'
 Plug 'dense-analysis/ale'
 Plug 'tell-k/vim-autopep8'
 Plug 'tpope/vim-fugitive'
-Plug 'flowtype/vim-flow'
 Plug 'Integralist/vim-mypy'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'sheerun/vim-polyglot'
@@ -84,8 +83,8 @@ set nocscopetag
 let g:ctags_statusline=1
 let g:ale_fix_on_save = 1
 set noignorecase
-highlight ALEWarning cterm=bold ctermbg=DarkGreen ctermfg=LightGrey
-highlight ALEError cterm=bold ctermbg=DarkGreen ctermfg=LightGrey
+highlight ALEWarning cterm=bold ctermbg=Yellow ctermfg=DarkGrey
+highlight ALEError cterm=bold ctermbg=Yellow ctermfg=DarkGrey
 highlight clear SignColumn
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)

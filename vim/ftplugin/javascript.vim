@@ -2,7 +2,7 @@ set tabstop=2
 set shiftwidth=2
 
 let b:ale_linter_aliases = ['css', 'javascript']
-let b:ale_linters = ['eslint', 'stylelint']
+let b:ale_linters = ['eslint', 'stylelint', 'flow-language-server']
 
 " Fix files with prettier, and then ESLint.
 let b:ale_fixers = ['eslint', 'prettier', 'stylelint']
