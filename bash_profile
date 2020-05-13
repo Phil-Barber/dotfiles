@@ -11,7 +11,7 @@ parse_git_branch() {
 }
 
 
-export PATH=$PYENV_ROOT/bin:/usr/local/Cellar:$PATH
+export PATH=$PYENV_ROOT/bin:/usr/local/Cellar:$HOME/.poetry/bin:/opt/local/bin:/opt/local/sbin:$PATH
 #export DEPLOY_TO=$(get_namespace)
 export LC_COLLATE=C
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -66,3 +66,6 @@ function make_js_tags {
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)";
 fi
+
+
+
