@@ -24,7 +24,7 @@
 [branch]
     autoSetupMerge = always
 [push]
-    default = matching
+	default = upstream
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true

@@ -1,5 +1,5 @@
 source ~/.bash_kube
-#source ~/.credentials
+source ~/.credentials
 
 export PS1="[\$(get_context)|\$(get_namespace)] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \n$ "
 
@@ -20,6 +20,8 @@ export CLICOLOR=1
 
 export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git'
 
+export PAGER=/usr/local/bin/vimpager
+
 # [Aliases]
 alias ls='ls -lG'
 alias pip=pip3
@@ -31,6 +33,9 @@ alias sentry-cli='sentry-cli --api-key $SENTRY_API_KEY'
 alias stern='stern --color=always'
 alias ctags="`brew --prefix`/bin/ctags"
 alias t="todo.sh"
+alias current-branch="git symbolic-ref --short HEAD"
+alias less=$PAGER
+alias zless=$PAGER
 
 function parent {
     (cd .. && $*)

@@ -1,7 +1,7 @@
 " Check Python files with flake8 and pylint.
-let b:ale_linters = ['flake8', 'mypy']
+let b:ale_linters = ['autopep8', 'mypy', 'flake8']
 " Fix Python files with autopep8 and yapf.
-let b:ale_fixers = ['yapf']
+let b:ale_fixers = ['autopep8', 'isort']
 
 " python syntax
 let g:python_highlight_all = 1
@@ -13,3 +13,5 @@ endfunction
 
 let g:test#custom_transformations = {'docker': function('DockerTransform')}
 let g:test#transformation = 'docker'
+
+:set foldmethod=indent

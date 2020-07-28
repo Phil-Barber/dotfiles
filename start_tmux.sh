@@ -4,3 +4,5 @@ tmux new-session -s native -c ~/repos/lantum-native -d
 tmux new-session -s todo -c ~/ -d
 tmux send -t todo.0 vim .todo.txt ENTER
 tmux new-session -s stack -c ~/repos/stack -d
+tmux new-session -s phil -c ~/repos/phil-barber -d
+tmux new-session -s riff -c ~/repos/riff -d

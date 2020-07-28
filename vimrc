@@ -63,6 +63,7 @@ autocmd StdinReadPre * let s:std_in=1
 :set wildignore+=node_modules/**,
 
 call plug#begin()
+Plug 'jxnblk/vim-mdx-js'
 Plug 'janko-m/vim-test'
 Plug 'dense-analysis/ale'
 Plug 'tell-k/vim-autopep8'
@@ -76,11 +77,20 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'Quramy/tsuquyomi'
+Plug 'jason0x43/vim-js-indent'
 call plug#end()
 
 augroup FiletypeGroup
     autocmd!
     au BufNewFile,BufRead *.styled.js set filetype=javascript
+augroup END
+
+augroup SyntaxSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 augroup END
 
 set nocscopetag
@@ -108,5 +118,4 @@ nmap <silent> <C-p> :cp<CR>
 " flow
 let g:flow#enable = 0
 let g:flow#autoclose = 1
-
 
