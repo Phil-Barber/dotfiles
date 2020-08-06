@@ -21,8 +21,6 @@
 [diff-so-fancy]
     changeHunkIndicators = true
     stripLeadingSymbols = true
-[branch]
-    autoSetupMerge = always
 [push]
 	default = upstream
 [filter "lfs"]
