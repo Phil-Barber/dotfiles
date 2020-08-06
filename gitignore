@@ -2,3 +2,4 @@ tags
 *.swp
 cscope.*
 .mypy_cache
+local-compose.yaml
