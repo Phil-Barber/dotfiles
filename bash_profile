@@ -69,9 +69,16 @@ function make_js_tags {
     ctags -R --exclude=node_modules --exclude=dist .;
 }
 
+function chrome {
+    open -a "Google Chrome" "$1";
+}
+function jira {
+    chrome "https://lantum.atlassian.net/browse/$1";
+}
+function febe {
+    chrome "https://lantum.com/staff/febe/$1/?limit=20&id=$2";
+}
+
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)";
 fi
-
-
-
