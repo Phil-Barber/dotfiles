@@ -13,7 +13,7 @@ use_uk_prod() {
     n prod
 }
 
-use_uk_staging() {
+use_ukds() {
     k config use-context ukds.lantum.com
     n staging
 }
