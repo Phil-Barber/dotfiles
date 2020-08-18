@@ -36,6 +36,7 @@ alias t="todo.sh"
 alias current-branch="git symbolic-ref --short HEAD"
 alias less=$PAGER
 alias zless=$PAGER
+alias dut="du -h $@ * .* | sort -rh | head-n 20"
 
 function parent {
     (cd .. && $*)
