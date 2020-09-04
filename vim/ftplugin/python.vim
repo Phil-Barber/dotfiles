@@ -2,8 +2,8 @@
 let b:ale_linters = ['autopep8', 'mypy', 'flake8']
 " Fix Python files with autopep8 and yapf.
 let b:ale_fixers = ['autopep8', 'isort']
+let g:ale_fix_on_save = 0
 
-" python syntax
 let g:python_highlight_all = 1
 
 function! DockerTransform(cmd)
