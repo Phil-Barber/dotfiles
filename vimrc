@@ -81,6 +81,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'Quramy/tsuquyomi'
 Plug 'jason0x43/vim-js-indent'
+Plug 'flowtype/vim-flow'
 Plug 'heavenshell/vim-jsdoc', {
     \ 'for': ['javascript', 'javascript.jsx','typescript'],
     \ 'do': 'make install'
