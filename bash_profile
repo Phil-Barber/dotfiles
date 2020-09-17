@@ -14,6 +14,7 @@ parse_git_branch() {
 export PATH=$PYENV_ROOT/bin:/usr/local/Cellar:$HOME/.poetry/bin:/opt/local/bin:/opt/local/sbin:$PATH
 #export DEPLOY_TO=$(get_namespace)
 export LC_COLLATE=C
+export LC_ALL=en_GB.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR=vim
 export CLICOLOR=1
@@ -82,3 +83,8 @@ function febe {
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)";
 fi
+
+# launch starship
+export STARSHIP_CONFIG=~/.starship
+eval "$(starship init bash)"
+
