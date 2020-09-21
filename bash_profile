@@ -1,16 +1,6 @@
 source ~/.bash_kube
 source ~/.credentials
 
-export PS1="[\$(get_context)|\$(get_namespace)] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \n$ "
-
-[ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ] \
-    &&  . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash 
-
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-
 export PATH=$PYENV_ROOT/bin:/usr/local/Cellar:$HOME/.poetry/bin:/opt/local/bin:/opt/local/sbin:$PATH
 #export DEPLOY_TO=$(get_namespace)
 export LC_COLLATE=C

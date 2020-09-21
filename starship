@@ -20,7 +20,7 @@ symbol = " "
 
 [git_branch]
 symbol = " "
-style = "bold 208"
+style = "208"
 
 [golang]
 symbol = " "
@@ -64,3 +64,9 @@ symbol = " "
 
 [rust]
 symbol = " "
+
+[git_status]
+style = "purple"
+
+[kubernetes]
+disabled= false
