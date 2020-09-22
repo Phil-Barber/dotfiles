@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/phil/repos/lantum/lantum-native/src/pages/find-work/list-view'
 let g:netrw_dirhist_3='/Users/phil/repos/riff/mumble-streams/lib'
 let g:netrw_dirhist_2='/Users/phil/repos/riff/mumble-streams'
 let g:netrw_dirhist_1='/Users/phil/repos/riff/mumble-streams/lib'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_8='/Users/phil/repos/riff/mumble-streams'
 let g:netrw_dirhist_7='/Users/phil/repos/riff/mumble-client-codecs-node/node_modules'
 let g:netrw_dirhist_6='/Users/phil/repos/riff/mumble-client-codecs-node/node_modules/@discordjs'
 let g:netrw_dirhist_5='/Users/phil/repos/lantum/stack/session/project/session'
-let g:netrw_dirhist_4='/Users/phil/repos/lantum/stack/session/project'

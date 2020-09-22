@@ -58,6 +58,7 @@ symbol = " "
 
 [python]
 symbol = " "
+pyenv_version_name = true
 
 [ruby]
 symbol = " "
@@ -69,4 +70,5 @@ symbol = " "
 style = "purple"
 
 [kubernetes]
-disabled= false
+disabled = false
+style = "green"
