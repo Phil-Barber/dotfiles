@@ -14,8 +14,11 @@ set undofile
 set foldmethod=indent
 set foldlevelstart=5
 
-:set colorcolumn=80
 highlight ColorColumn ctermbg=7
+
+hi Folded ctermfg=Black
+hi Folded ctermbg=DarkBlue
+
 
 set updatetime=100
 

@@ -1,11 +1,11 @@
-source ~/.bash_kube
+source ~/repos/lantum/stack/.bash_kube
 source ~/.credentials
 
 [ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash ] \
     &&  . /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
 
 
-export PATH=$PYENV_ROOT/bin:/usr/local/Cellar:$HOME/.poetry/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=$PYENV_ROOT/bin:/usr/local/Cellar/openvpn/2.4.9/sbin:/usr/local/Cellar:$HOME/.poetry/bin:/opt/local/bin:/opt/local/sbin:$PATH
 #export DEPLOY_TO=$(get_namespace)
 export LC_COLLATE=C
 export LC_ALL=en_GB.UTF-8
